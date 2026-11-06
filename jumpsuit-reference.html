@@ -49,6 +49,16 @@ tr:last-child td{border-bottom:0}
 .box{border:1px solid var(--rule);background:var(--card);padding:18px;display:flex;flex-direction:column;gap:10px;min-width:0}
 .box ul{margin:0;padding-left:18px;display:flex;flex-direction:column;gap:6px;font-size:14.5px}
 .note{font-size:14px;color:var(--muted)}
+.sw{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,150px),1fr));gap:12px}
+.sw div{border:1px solid var(--rule);background:var(--card);display:flex;flex-direction:column;min-width:0}
+.sw i{height:64px;display:block;border-bottom:1px solid var(--rule)}
+.sw span{padding:8px 10px;font-size:13px;line-height:1.35}
+.sw b{display:block;font-size:14px}
+.sw code{font:400 12px var(--mono);color:var(--muted)}
+.pr{border:1px solid var(--rule);background:var(--card);padding:14px 16px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.pr pre{margin:0;white-space:pre-wrap;word-break:break-word;font:400 13px/1.5 var(--mono);color:var(--ink)}
+.pr button{align-self:flex-start;font:500 12px var(--mono);letter-spacing:.05em;text-transform:uppercase;background:none;color:var(--accent);border:1px solid var(--accent);padding:6px 10px;cursor:pointer}
+.pr button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 .q{border-left:3px solid var(--accent);padding:2px 0 2px 14px;display:flex;flex-direction:column;gap:6px}
 svg text{font-family:var(--mono)}
 </style>
@@ -154,6 +164,40 @@ svg text{font-family:var(--mono)}
 </section>
 
 <section>
+  <h2>Съёмный капюшон</h2>
+  <p>В референсе капюшон держится на кнопках у воротника. Чтобы комбинезон выглядел цельно и без капюшона, делаем стойку-воротник, а капюшон отдельным элементом.</p>
+  <div class="two">
+    <div class="box"><h3>Вариант A: на кнопках (рекомендуется)</h3><ul><li>Воротник-стойка на резинке, как на видео, 4–5 кнопок по линии шеи с ровным шагом 2,5–3 см.</li><li>Ответные части на капюшоне пришиты по низу, под ними дублирующая лента, чтобы кнопки не рвали ткань.</li><li>Капюшон можно отстёгивать целиком или оставлять спереди застёгнутым.</li></ul></div>
+    <div class="box"><h3>Вариант B: на молнии по горловине</h3><ul><li>Тонкая молния вокруг шеи, внутри защитная планка от шерсти.</li><li>Надёжнее держит капюшон на ветру, но сложнее в пошиве и жёстче у шеи.</li><li>Подходит, если собака не терпит возню с кнопками у шеи.</li></ul></div>
+  </div>
+  <p class="note">Мальтипу кудрявые, шерсть застревает в кнопках и молнии. Кнопки лучше крыть клапаном или ставить на ленту с запасом от ворота, а молнию закрывать планкой.</p>
+</section>
+
+<section>
+  <h2>Цвета</h2>
+  <p>Основной цвет из референса — верблюжий. Остальные подобраны под рыжую или кремовую шерсть мальтипу и под городской образ. Значения HEX примерные, точный оттенок согласуйте по образцу ткани.</p>
+  <div class="sw">
+    <div><i style="background:#c19a6b"></i><span><b>Верблюжий</b><code>#C19A6B</code>как на видео</span></div>
+    <div><i style="background:#3a3f45"></i><span><b>Графит</b><code>#3A3F45</code>универсальный</span></div>
+    <div><i style="background:#6f7a5a"></i><span><b>Олива</b><code>#6F7A5A</code>тёплый зелёный</span></div>
+    <div><i style="background:#e6dccb"></i><span><b>Молочный</b><code>#E6DCCB</code>светлый, маркий</span></div>
+    <div><i style="background:#c99a94"></i><span><b>Пыльная роза</b><code>#C99A94</code>мягкий розовый</span></div>
+    <div><i style="background:#5a3a2e"></i><span><b>Шоколад</b><code>#5A3A2E</code>тёмный коричневый</span></div>
+  </div>
+  <p class="note">Фурнитура на всех цветах одна: серебристые кнопки, чёрные молния, лента и подошва. Подкладку капюшона можно держать в одном цвете для всей линейки, например серая с мелким рисунком, как в референсе.</p>
+</section>
+
+<section>
+  <h2>Промпты для фотореалистичных референсов</h2>
+  <p>Картинки я не генерировала. Эти промпты можно вставить в любой генератор изображений (лучше прикладывать фото или кадр из видео как образец формы).</p>
+  <div class="pr"><h3>1. Общий вид</h3><pre>Photorealistic studio photo of a fluffy apricot maltipoo dog standing on a light beige carpet wearing a camel-beige quilted waterproof dog jumpsuit with a detachable hood, full coverage of all four legs ending in closed padded boots with black non-slip soles, black zipper along the back, metal silver snap buttons, soft natural window light, side view, sharp fabric texture, pet fashion catalog style.</pre><button type="button">Копировать</button></div>
+  <div class="pr"><h3>2. Лапка крупно</h3><pre>Macro product photo of a dog's front leg in a camel quilted jumpsuit sleeve that ends in a closed padded paw boot, a wrap-over cuff with three silver snap buttons, a black webbing strap around the ankle, thick black rubber sole, white background, soft studio light, high detail.</pre><button type="button">Копировать</button></div>
+  <div class="pr"><h3>3. Капюшон отдельно</h3><pre>Product photo of a detachable dog hood in camel quilted fabric with grey checked thermal lining, silver snap buttons along the bottom edge, shown next to a dog jumpsuit with a matching snap-on stand collar, flat lay on a white surface, soft shadows.</pre><button type="button">Копировать</button></div>
+  <div class="pr"><h3>4. Линейка цветов</h3><pre>Photorealistic lineup of six identical dog jumpsuits with closed paw boots in camel, graphite, olive green, milk white, dusty rose and chocolate brown, hanging side by side on a light studio background, same silver snaps and black zipper details, catalog photo.</pre><button type="button">Копировать</button></div>
+  <div class="pr"><h3>5. Образ в движении</h3><pre>Lifestyle photo of a maltipoo walking on a city sidewalk in autumn wearing a camel quilted jumpsuit with closed boots and hood up, leash attached to a loop on the back, shallow depth of field, natural light.</pre><button type="button">Копировать</button></div>
+</section>
+
+<section>
   <h2>Вопросы к технологу</h2>
   <div class="two">
     <div class="q"><h3>Лапка</h3><p>Какая форма ботиночка лучше держится на собаке: с плоской подошвой или со скруглённым носком? Как закрепить подошву на мягком утеплённом носке, чтобы она не отходила?</p></div>
@@ -165,6 +209,7 @@ svg text{font-family:var(--mono)}
 </main>
 
 <script>
+document.querySelectorAll('.pr').forEach(b=>{const btn=b.querySelector('button');btn.addEventListener('click',async()=>{const t=b.querySelector('pre').textContent;try{await navigator.clipboard.writeText(t);btn.textContent='Скопировано'}catch(e){const r=document.createRange();r.selectNodeContents(b.querySelector('pre'));const s=getSelection();s.removeAllRanges();s.addRange(r);btn.textContent='Выделено'}setTimeout(()=>btn.textContent='Копировать',1800)})});
 const NS='http://www.w3.org/2000/svg';
 const set=(id,html)=>{document.getElementById(id).innerHTML=html};
 
