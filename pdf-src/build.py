@@ -32,7 +32,7 @@ body=body[:hdr_end]+ref+body[hdr_end:]
 # add burgundy swatch
 body=body.replace('<div><i style="background:#5a3a2e"></i><span><b>Шоколад</b><code>#5A3A2E</code>тёмный коричневый</span></div>',
  '<div><i style="background:#5a3a2e"></i><span><b>Шоколад</b><code>#5A3A2E</code>тёмный коричневый</span></div>\n    <div><i style="background:#6e1f2b"></i><span><b>Бордо</b><code>#6E1F2B</code>насыщенный красный</span></div>')
-body=body.replace('Основной цвет из референса — верблюжий.','Основной цвет из референса — верблюжий. Остальные цвета те же, что на вашей линейке.')
+body=body.replace('Основной цвет из референса — верблюжий.','Основной цвет из референса — верблюжий. Остальные цвета те же, что на линейке референсов.')
 
 # spec from generated photos before questions
 spec='''<section>
