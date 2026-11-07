@@ -53,6 +53,7 @@ spec='''<section>
 '''
 q=body.index('<section>\n  <h2>Вопросы к технологу</h2>')
 body=body[:q]+spec+body[q:]
+body=body.replace('<section>\n  <h2>Технический дизайн</h2>','<section class="pb">\n  <h2>Технический дизайн</h2>',1)
 body=body.replace('<section>\n  <h2>Эскизы</h2>','<section class="sk">\n  <h2>Эскизы</h2>',1)
 
 css='''
@@ -63,7 +64,8 @@ body{margin:0;background:#fff;color:var(--ink);font:10.5pt/1.5 var(--body)}
 main{display:flex;flex-direction:column;gap:9mm}
 h1{font:700 24pt/1.15 var(--display);margin:0}
 h2{font:700 15pt/1.2 var(--display);margin:0;break-after:avoid}
-h3{font:600 10.5pt var(--body);margin:0 0 4px}
+h3{font:600 10.5pt var(--body);margin:0 0 4px;break-after:avoid}
+.tw{break-inside:avoid}
 p{margin:0}
 .eyebrow{font:500 8pt var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
 header{display:flex;flex-direction:column;gap:8px;border-bottom:1px solid var(--rule);padding-bottom:6mm}
